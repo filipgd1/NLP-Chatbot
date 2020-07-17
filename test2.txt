@@ -1,0 +1,3 @@
+vtor test
+
+vo ovoj fajl ke probame da razbereme za git
