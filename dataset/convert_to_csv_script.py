@@ -7,7 +7,7 @@ Created on Mon Jul 20 14:11:59 2020
 
 import pandas as pd
 
-path_to_excel = 'dataset_brainster.xlsx'
+path_to_excel = 'dataset_brainster ping-pong.xlsx'
 data_excel = pd.read_excel(path_to_excel, encoding='utf-8')
 
 for col in data_excel.columns:
