@@ -1,4 +1,4 @@
-# NLP-Chatbox
+# Brainster - Chatbot
 Chatbox for Brainster
 
 * Title
