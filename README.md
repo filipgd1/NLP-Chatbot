@@ -16,9 +16,6 @@ An untrained instance of Chatbot starts to communicate. Each time a user enters 
 * [Filip Nikolovski](https://www.linkedin.com/in/filip-nikolovski-a26559ab/)
 * [Aleksandar Gjurcinoski](https://www.linkedin.com/in/aleksandar-gjurcinoski-7594a242/)
 
-@filipgd1
-@MartinaNest
-
 # Project/Chat Architecture
 	* Client Input
 	* Preprocessing
@@ -43,7 +40,37 @@ An untrained instance of Chatbot starts to communicate. Each time a user enters 
 	* Precision, recall, TP, FP, TN, FN...
 
 # Requirements & Installation Instructions
-	* Модули и библиотеки (keras, sklearn etc)
+* Libraires used for this project: pandas, NumPy, ScyPy, matplotlib, seaborn, nltk, sci-kit Learn, regex, string, keras, bpemb, BERT, xgboost
+* Modules used for this project: 
+
+```import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import nltk
+from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+import re
+import string
+from scipy.spatial.distance import cdist
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.metrics import precision_recall_fscore_support as score
+
+from keras.models import Sequential
+from keras.layers import Dense, LSTM, Dropout, Activation
+from keras.layers.embeddings import Embedding
+from keras.preprocessing import sequence
+from keras.preprocessing.text import Tokenizer
+from keras.callbacks import ModelCheckpoint, EarlyStopping
+from keras.utils import to_categorical
+
+from sklearn.metrics import ConfusionMatrixDisplay, plot_confusion_matrix, classification_report, confusion_matrix
+
+
+from bpemb import BPEmb
+import xgboost as xgb
+```
 
 # Special Thanks to Kiril Cvetkov :)
 
