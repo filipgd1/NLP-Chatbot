@@ -17,10 +17,7 @@ An untrained instance of Chatbot starts to communicate. Each time a user enters 
 * [Aleksandar Gjurcinoski](https://www.linkedin.com/in/aleksandar-gjurcinoski-7594a242/)
 
 ## Project/Chat Architecture
-	* Client Input
-	* Preprocessing
-	* Model classificator
-	* Classification results -> continuous vector -> similarity
+![Chatbot architecture](images/chatbot_flow.png)
 
 ## NLP Algorithms used
 [x] BERT
