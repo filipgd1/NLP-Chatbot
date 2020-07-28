@@ -11,8 +11,7 @@ An untrained instance of Chatbot starts to communicate. Each time a user enters 
 # Team members
 [Contribution guidelines for this project](docs/CONTRIBUTING.md)
 
-* Martina Nestorovska
-https://www.linkedin.com/in/martina-nestorovska-b367ba8/
+* [Martina Nestorovska](https://www.linkedin.com/in/martina-nestorovska-b367ba8/)
 
 * Project/Chat Architecture
 	* Client Input
