@@ -11,10 +11,13 @@ An untrained instance of Chatbot starts to communicate. Each time a user enters 
 # Team members
 [Contribution guidelines for this project](CONTRIBUTING.md)
 
-* [Martina Nestorovska](https://www.linkedin.com/in/martina-nestorovska-b367ba8/) @https://github.com/filipgd1
+* [Martina Nestorovska](https://www.linkedin.com/in/martina-nestorovska-b367ba8/)
 * [Gabriela Bonkova](https://www.linkedin.com/in/gabriela-bonkova-a25607194/)
 * [Filip Nikolovski](https://www.linkedin.com/in/filip-nikolovski-a26559ab/)
 * [Aleksandar Gjurcinoski](https://www.linkedin.com/in/aleksandar-gjurcinoski-7594a242/)
+
+@filipgd1
+@MartinaNest
 
 # Project/Chat Architecture
 	* Client Input
