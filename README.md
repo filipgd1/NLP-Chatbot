@@ -5,10 +5,10 @@ Brainster chatbot is a machine-learning based conversational dialog engine build
 
 	* Видео со проба од ботот (screen capture)
 
-# How it works
+## How it works
 An untrained instance of Chatbot starts to communicate. Each time a user enters a question, the algoritham saves the text that they entered and classify the question in which sections belong. After that the program selects the closest matching response by searching for the closest matching known question that matches the input, it then returns the most likely response to that question based on how frequently each response is issued by the people the bot communicates with.
 
-# Team members
+## Team members
 [Contribution guidelines for this project](CONTRIBUTING.md)
 
 * [Martina Nestorovska](https://www.linkedin.com/in/martina-nestorovska-b367ba8/)
@@ -16,63 +16,34 @@ An untrained instance of Chatbot starts to communicate. Each time a user enters 
 * [Filip Nikolovski](https://www.linkedin.com/in/filip-nikolovski-a26559ab/)
 * [Aleksandar Gjurcinoski](https://www.linkedin.com/in/aleksandar-gjurcinoski-7594a242/)
 
-# Project/Chat Architecture
+## Project/Chat Architecture
 	* Client Input
 	* Preprocessing
 	* Model classificator
 	* Classification results -> continuous vector -> similarity
 
-# NLP Algorithms used
+## NLP Algorithms used
 [x] BERT
 [x] Word Embedding
 [x] TF-IDF
 [x] TF-IDF ngrams
 [x] CountVectorizer
 
-# Clasification Algorithms used
+## Clasification Algorithms used
 [x] Neural Networks
 [x] XGBoost
 [x] RandomForest
 [x] NaiveBayes
 [x] KNN
 
-# Summary of results & benchmark
+## Summary of results & benchmark
 	* Precision, recall, TP, FP, TN, FN...
 
-# Requirements & Installation Instructions
+## Requirements & Installation Instructions
 * Libraires used for this project: pandas, NumPy, ScyPy, matplotlib, seaborn, nltk, sci-kit Learn, regex, string, keras, bpemb, BERT, xgboost
 * Modules used for this project: 
 
-```import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import nltk
-from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
-import re
-import string
-from scipy.spatial.distance import cdist
-from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.metrics import precision_recall_fscore_support as score
-
-from keras.models import Sequential
-from keras.layers import Dense, LSTM, Dropout, Activation
-from keras.layers.embeddings import Embedding
-from keras.preprocessing import sequence
-from keras.preprocessing.text import Tokenizer
-from keras.callbacks import ModelCheckpoint, EarlyStopping
-from keras.utils import to_categorical
-
-from sklearn.metrics import ConfusionMatrixDisplay, plot_confusion_matrix, classification_report, confusion_matrix
-
-
-from bpemb import BPEmb
-import xgboost as xgb
-```
-
-# Special Thanks to Kiril Cvetkov :)
+## Special Thanks to Kiril Cvetkov :)
 
 
 
