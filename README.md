@@ -1,22 +1,42 @@
 # Brainster Chatbot - Rubik
 
 ## Description
-Brainster chatbot is a machine-learning based conversational dialog engine build in Python and its libraris which makes it possible to generate responses based on collections of known conversations. Main purpose for Brainster chatbot is asnwering questions to all visitors of the website and facebook business page. Questions are connected with all academies, courses and bootcapms organized by Brainster. Moreover you can get more familier withh all departments that one day you will be part of it.
+Brainster Chatbot is a machine-learning based conversational dialog engine build in Python and its libraries which makes it possible to generate responses based on collections of known conversations. The main purpose of the Brainster Chatbot is asnwering questions to visitors of the [website](https://brainster.co/) and [Facebook business page](https://www.facebook.com/brainster.co). Questions may be related with all academies, courses and bootcapms organized by Brainster. Moreover, you can get more familiar with all departments that one day you will be part of it.
 
 	* Видео со проба од ботот (screen capture)
 
-## How it works
-An untrained instance of Chatbot starts to communicate. Each time a user enters a question, the algoritham saves the text that they entered and classify the question in which sections belong. After that the program selects the closest matching response by searching for the closest matching known question that matches the input, it then returns the most likely response to that question based on how frequently each response is issued by the people the bot communicates with.
 
-## Team members
-[Contribution guidelines for this project](CONTRIBUTING.md)
 
-* [Martina Nestorovska](https://www.linkedin.com/in/martina-nestorovska-b367ba8/)
-* [Gabriela Bonkova](https://www.linkedin.com/in/gabriela-bonkova-a25607194/)
-* [Filip Nikolovski](https://www.linkedin.com/in/filip-nikolovski-a26559ab/)
-* [Aleksandar Gjurcinoski](https://www.linkedin.com/in/aleksandar-gjurcinoski-7594a242/)
+## How does it work?
+Once active, the Chatbot starts to communicate. Each time a user enters a query, the bot provides an appropriate response based on its training. To achieve this the input query is taken through several stages.
+
+
+
 
 ## Project/Chat Architecture
+
+### Data and Dataset Generation
+Dataset generation started with an set of 300+ questions Brainster received via email or social media. Generated questions were classified into 8 classes, 7 of which related to an Academy offered by Brainster (Digital Marketing, Graphical Design, Data Science, Front-end Programming, Full-stack Programming, Software  Testing, UX/UI), and one class for general questions. The initial set of questions was expanded by more than tenfold (to 3100+ questions), by writing new, or by rewriting existing questions with slightly modified wording in order to capture the nuances (question diversification).
+
+### Dataset Processing
+The questions in the dataset were individually processed as described in the process outlined further.
+
+1. Any latin characters in the question are converted to cyrillic characters.
+2. Punctuation and stop-words are removed from the question. Finally, the question is tokenized.
+3. The question is vectorized using [word-embedding](https://nlp.h-its.org/bpemb/). The output vector is of dimesion 300.
+
+The final outcome is a dataset of 300-by-1 vectors paired with their resprective class. A classification model is then trained on this set.
+
+### Classification Model Traning
+Several classification models were trained and tested before deciding which one to use. Early on during the testing it became evident that Random Forest classifier, XGBoost classifier, and a NN-based classifier performed best (no worse than low 90% on any validation accuracy), while the other classifiers performed somewhat worse (Naive Bayes, k-Nearest Neighbors, Gradient Boost, ADA Boost; validation accuracy in the high 80%). The final decision was to use the classifier based on neural networks which has been performing at validation accuracy of ~98%.
+
+### Responding to Questions
+***in progress***
+4. Based on this vector, the original input query is classified in one of eight categories, refering either to one of seven academies offered by Brainster, or as a general question (not academy-speciffic).
+5. Using the classification from the previous step, cosine similarity is used to determine what question in the appropriate class is closest to the input query (this is achieved by considering the vectorized forms of both strings).
+6. Finally, the answer to the question identified in the prevous step is produced as a response to the original query.
+
+
 ![Chatbot architecture](images/chatbot_flow.png)
 
 ## NLP Algorithms used
@@ -34,7 +54,17 @@ An untrained instance of Chatbot starts to communicate. Each time a user enters 
 [x] KNN
 
 ## Summary of results & benchmark
-	* Precision, recall, TP, FP, TN, FN...
+* Precision, recall, TP, FP, TN, FN...
+
+
+## Team members
+[Contribution guidelines for this project](CONTRIBUTING.md)
+
+* [Martina Nestorovska](https://www.linkedin.com/in/martina-nestorovska-b367ba8/)
+* [Gabriela Bonkova](https://www.linkedin.com/in/gabriela-bonkova-a25607194/)
+* [Filip Nikolovski](https://www.linkedin.com/in/filip-nikolovski-a26559ab/)
+* [Aleksandar Gjurcinoski](https://www.linkedin.com/in/aleksandar-gjurcinoski-7594a242/)
+
 
 ## Requirements & Installation Instructions
 * Libraires used for this project: pandas, NumPy, ScyPy, matplotlib, seaborn, nltk, sci-kit Learn, regex, string, keras, bpemb, BERT, xgboost
@@ -47,3 +77,4 @@ An untrained instance of Chatbot starts to communicate. Each time a user enters 
 
 Да се проверат прашањата
 Да се направи chit-chat
+
