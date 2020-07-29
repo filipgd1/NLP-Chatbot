@@ -31,7 +31,7 @@ The final outcome is a dataset of 300-by-1 vectors paired with their resprective
 Several classification models were trained and tested before deciding which one to use. Early on during the testing it became evident that Random Forest classifier, XGBoost classifier, and a NN-based classifier performed best (no worse than low 90% on any validation accuracy), while the other classifiers performed somewhat worse (Naive Bayes, k-Nearest Neighbors, Gradient Boost, ADA Boost; validation accuracy in the high 80%). The final decision was to use the classifier based on neural networks which has been performing at validation accuracy of ~98%.
 
 ### Responding to Questions
-
+***in progress***
 4. Based on this vector, the original input query is classified in one of eight categories, refering either to one of seven academies offered by Brainster, or as a general question (not academy-speciffic).
 5. Using the classification from the previous step, cosine similarity is used to determine what question in the appropriate class is closest to the input query (this is achieved by considering the vectorized forms of both strings).
 6. Finally, the answer to the question identified in the prevous step is produced as a response to the original query.
