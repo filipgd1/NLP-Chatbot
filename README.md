@@ -25,11 +25,9 @@ Brainster's Chatbot Rubik is a machine learning based conversational dialog engi
 Once active, the Chatbot starts to communicate. Each time a user enters a query, the bot provides an appropriate response based on its training. The bot accepts queries in Macedonian, and responds in Macedonian. Input shoud preferably be in cyrillic in order to maximize the quality of the answers. Latin inputs are automatically converted into cyrillic, but such a case some characters/combinations of characters could be transliterated wrongly.
 
 
-<video width="320" height="240" controls>
-  <source src="videos/Rubik_Test_Run.mp4" type="video/mp4">
-</video>
-
-![Rubik in action](videos/Rubik_Test_Run.mp4)
+| Rubik in Action |
+| :----: |
+| ![Rubik in action](images/Rubik_Test_Run.gif) |
 
 
 ## Project/Chat Architecture <a name="architecture"></a>
