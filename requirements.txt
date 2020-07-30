@@ -1,0 +1,14 @@
+pandas==1.0.1
+numpy==1.18.1
+matplotlib==3.1.3
+seaborn==0.10.0
+nltk==3.4.5
+scikit-learn==0.22.1
+
+*** re
+*** string
+
+scipy==1.4.1
+Keras==2.4.3
+bpemb==0.3.2
+xgboost==1.1.1
