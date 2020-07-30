@@ -1,6 +1,6 @@
 # Brainster Chatbot - Rubik
 
-## Contents
+## Content
 - [Description](#description)
 - [How does it work?](#howdoesitwork)
 - [Project/Chat Architecture](#architecture)
