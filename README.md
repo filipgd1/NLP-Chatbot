@@ -1,6 +1,6 @@
 # Brainster Chatbot - Rubik
 
-# Contents
+## Contents
 - [Description](#description)
 - [How does it work?](#howdoesitwork)
 - [Project/Chat Architecture](#architecture)
@@ -19,14 +19,13 @@
 ## Description <a name="description"></a>
 Brainster's Chatbot Rubik is a machine learning based conversational dialog engine build in Python and its libraries which makes it possible to generate responses based on collections of known conversations. The main purpose of the Brainster Chatbot is asnwering questions to visitors of the [website](https://brainster.co/) and [Facebook business page](https://www.facebook.com/brainster.co). Questions may be related with all academies, courses and bootcapms organized by Brainster. Moreover, you can get more familiar with all departments that one day you will be part of it.
 
-	* Видео со проба од ботот (screen capture)
-
 
 
 ## How does it work? <a name="howdoesitwork"></a>
 Once active, the Chatbot starts to communicate. Each time a user enters a query, the bot provides an appropriate response based on its training. The bot accepts queries in Macedonian, and responds in Macedonian. Input shoud preferably be in cyrillic in order to maximize the quality of the answers. Latin inputs are automatically converted into cyrillic, but such a case some characters/combinations of characters could be transliterated wrongly.
 
 
+![Rubik in action](videos/Rubik_Test_Run.mp4)
 
 
 ## Project/Chat Architecture <a name="architecture"></a>
