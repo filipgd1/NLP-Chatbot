@@ -18,7 +18,7 @@ Once active, the Chatbot starts to communicate. Each time a user enters a query,
 ### Data and Dataset Generation
 Dataset generation started with an set of 300+ questions Brainster received via email or social media. Generated questions were classified into 8 classes, 7 of which related to an Academy offered by Brainster (Digital Marketing, Graphical Design, Data Science, Front-end Programming, Full-stack Programming, Software  Testing, UX/UI), and one class for general questions. The initial set of questions was expanded by more than tenfold (to 3100+ questions), by writing new, or by rewriting existing questions with slightly modified wording in order to capture the nuances (question diversification).
 
-### Dataset Processing
+### Dataset Preprocessing
 The questions in the dataset were individually processed as described in the process outlined further.
 
 1. Any latin characters in the question are converted to cyrillic characters.
@@ -28,30 +28,32 @@ The questions in the dataset were individually processed as described in the pro
 The final outcome is a dataset of 300-by-1 vectors paired with their resprective class. A classification model is then trained on this set.
 
 ### Classification Model Traning
-Several classification models were trained and tested before deciding which one to use. Early on during the testing it became evident that Random Forest classifier, XGBoost classifier, and a NN-based classifier performed best (no worse than low 90% on any validation accuracy), while the other classifiers performed somewhat worse (Naive Bayes, k-Nearest Neighbors, Gradient Boost, ADA Boost; validation accuracy in the high 80%). The final decision was to use the classifier based on neural networks which has been performing at validation accuracy of ~98%.
+Several classification models were trained and tested before deciding which one to use. Early on during the testing it became evident that Random Forest classifier, XGBoost classifier, and a NN-based classifier performed best (no worse than low 90% on any validation accuracy), while the other classifiers performed somewhat worse (Naive Bayes, k-Nearest Neighbors, Gradient Boost, ADA Boost; validation accuracy in the high 80%). The final decision was to use the classifier based on neural networks which has been performing at validation accuracy of 99.21%.
 
 ### Responding to Questions
-***in progress***
-4. Based on this vector, the original input query is classified in one of eight categories, refering either to one of seven academies offered by Brainster, or as a general question (not academy-speciffic).
-5. Using the classification from the previous step, cosine similarity is used to determine what question in the appropriate class is closest to the input query (this is achieved by considering the vectorized forms of both strings).
-6. Finally, the answer to the question identified in the prevous step is produced as a response to the original query.
+User input queries are processed in the same manner as described in Dataset Processing. Once the query is transformed in the required form, the following process takes place.
 
+1. The query is classified into one of the 8 classes outlined above. 
+2. Using the classification from the previous step, cosine similarity is used to determine what question in the appropriate class is closest to the input query.
+3. Finally, the answer to the question identified in the prevous step is produced as a response to the user query.
+
+The user interface of the method is implemented in [Telegram](https://telegram.org/)
 
 ![Chatbot architecture](images/chatbot_flow.png)
 
 ## NLP Algorithms used
-[x] BERT
-[x] Word Embedding
-[x] TF-IDF
-[x] TF-IDF ngrams
-[x] CountVectorizer
+[x]BERT
+[x]Word Embedding
+[x]TF-IDF
+[x]TF-IDF ngrams
+[x]CountVectorizer
 
 ## Clasification Algorithms used
-[x] Neural Networks
-[x] XGBoost
-[x] RandomForest
-[x] NaiveBayes
-[x] KNN
+[x]Neural Networks
+[x]XGBoost
+[x]RandomForest
+[x]NaiveBayes
+[x]KNN
 
 ## Summary of results & benchmark
 * Precision, recall, TP, FP, TN, FN...
