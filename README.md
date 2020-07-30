@@ -69,8 +69,7 @@ The user interface of the method is implemented in [Telegram](https://telegram.o
 
 
 ## Requirements & Installation Instructions
-* Libraires used for this project: pandas, NumPy, ScyPy, matplotlib, seaborn, nltk, sci-kit Learn, regex, string, keras, bpemb, BERT, xgboost
-* Modules used for this project: 
+Check [this list](requirements.txt) for details about modules and versions used in this implementation.
 
 ## Special Thanks to Kiril Cvetkov :)
 
