@@ -95,7 +95,7 @@ The following classification methods were tried and tested:
 
 ![Chatbot Confusion Matrix](images/confusion_matrix.png)
 
-On benchmark we selected 56 questions randomly from usres who send mails, comments etc. Accuracy on classifing this questions was 91% and we can see that if sample was bigger in some classes accuracy will go over actual score.
+On benchmark we selected 56 questions randomly from users who send mails, comments etc. Accuracy on classifying these questions was 91% and we can see that if sample was bigger in some classes accuracy will go over actual score.
 On the other hand benchmark on continius vector on overal result without classification was 80.64%.
 
 ## Requirements <a name="requirements"></a>
