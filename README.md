@@ -109,7 +109,7 @@ Check [this list](requirements.txt) for details about modules and versions used 
 * [Gabriela Bonkova](https://www.linkedin.com/in/gabriela-bonkova-a25607194/)
 * [Filip Nikolovski](https://www.linkedin.com/in/filip-nikolovski-a26559ab/)
 * [Aleksandar Gjurcinoski](https://www.linkedin.com/in/aleksandar-gjurcinoski-7594a242/)
-* [Stefan Krstevski](https://www.linkedin.com/in/stefan-krstevski-027ab0161)
+* [Stefan Krstevski](https://www.linkedin.com/in/stefan-krstevski-027ab0161/)
 
 
 ## Special Thanks to our mentor Kiril Cvetkov <a name="thanks"></a>
@@ -117,6 +117,5 @@ Check [this list](requirements.txt) for details about modules and versions used 
 
 
 
-Да се проверат прашањата
-Да се направи chit-chat
+
 
