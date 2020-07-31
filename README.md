@@ -79,7 +79,20 @@ The following classification methods were tried and tested:
 
 
 ## Summary of results & benchmark <a name="benchmark"></a>
-* Precision, recall, TP, FP, TN, FN...
+| Class        | precision           | recall  | f1-score  | support  |
+| ------------- |:-------------:| -----:| -----:| -----:|
+| G      | 1.00 | 0.80 | 0.89 | 15 |
+| M      | 1.00      |   1.00 |   1.00 |   4 |
+| GD      | 0.67      |   1.00 |   0.80 |   2 |
+| FEP | 0.50      |    1.00 |    0.67 |    1 |
+| FSP | 0.50      |    1.00 |    0.67 |    3 |
+| DS | 1.00      |    1.00 |    1.00 |    11 |
+| QA | 1.00      |    1.00 |    1.00 |    8 |
+| UX/UI | 1.00      |    0.83 |    0.83 |    12 |
+
+| accuracy      |     |     | 0.91 | 56 |
+| macro avg      | 0.83      |   0.95 |   0.87 |   56 |
+| weighted avg      | 0.95      |   0.91 |   0.92 |   56 |
 
 ## Requirements <a name="requirements"></a>
 Check [this list](requirements.txt) for details about modules and versions used in this implementation.
