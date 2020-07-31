@@ -44,7 +44,7 @@ The questions in the dataset were individually processed as described in the pro
 The final outcome is a dataset of 300-by-1 vectors paired with their resprective class. A classification model is then trained on this set.
 
 ### *Classification Model Traning* <a name="training"></a>
-Several classification models were trained and tested before deciding which one to use. Early on during the testing it became evident that Random Forest classifier, XGBoost classifier, and a neural network based classifier performed best (no worse than low 90% on any validation accuracy), while the other classifiers performed somewhat worse (Naive Bayes, k-Nearest Neighbors, Gradient Boost, ADA Boost; validation accuracy in the high 80%). The final decision was to use the classifier based on neural networks which has been performing at validation accuracy of 99.21%.
+Several classification models were trained and tested before deciding which one to use. Early on during the testing it became evident that Random Forest classifier, XGBoost classifier, and a neural network based classifier performed best (no worse than low 90% on any validation accuracy), while the other classifiers performed somewhat worse (Naive Bayes, k-Nearest Neighbors, Gradient Boost, ADA Boost; validation accuracy in the high 80%). The final decision was to use the classifier based on neural networks which has been performing at validation accuracy of 99.06%.
 
 Apart from these models, we tested the performance of the [BERT pre-trained language model](https://github.com/google-research/bert). Its performance was only slightly worse than our own approach.
 
@@ -111,7 +111,7 @@ Check [this list](requirements.txt) for details about modules and versions used 
 * [Aleksandar Gjurcinoski](https://www.linkedin.com/in/aleksandar-gjurcinoski-7594a242/)
 
 
-## Special Thanks to Kiril Cvetkov :) <a name="thanks"></a>
+## Special Thanks to our mentor Kiril Cvetkov <a name="thanks"></a>
 
 
 
