@@ -80,7 +80,7 @@ The following classification methods were tried and tested:
 
 ## Summary of results & benchmark <a name="benchmark"></a>
 | Class        | precision           | recall  | f1-score  | support  |
-| ------------- |:-------------:| -----:| -----:| -----:|
+| ------------- |:-------------:| :-----:| :-----:| :-----:|
 | G      | 1.00 | 0.80 | 0.89 | 15 |
 | M      | 1.00      |   1.00 |   1.00 |   4 |
 | GD      | 0.67      |   1.00 |   0.80 |   2 |
