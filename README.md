@@ -93,6 +93,8 @@ The following classification methods were tried and tested:
 | macro avg      | 0.83      |   0.95 |   0.87 |   56 |
 | weighted avg      | 0.95      |   0.91 |   0.92 |   56 |
 
+![Chatbot Confusion Matrix](images/confusion_matrix.png)
+
 ## Requirements <a name="requirements"></a>
 Check [this list](requirements.txt) for details about modules and versions used in this implementation.
 
