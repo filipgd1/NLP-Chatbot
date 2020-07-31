@@ -89,7 +89,6 @@ The following classification methods were tried and tested:
 | DS | 1.00      |    1.00 |    1.00 |    11 |
 | QA | 1.00      |    1.00 |    1.00 |    8 |
 | UX/UI | 1.00      |    0.83 |    0.83 |    12 |
-
 | accuracy      |     |     | 0.91 | 56 |
 | macro avg      | 0.83      |   0.95 |   0.87 |   56 |
 | weighted avg      | 0.95      |   0.91 |   0.92 |   56 |
